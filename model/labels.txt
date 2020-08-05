@@ -1,0 +1,4 @@
+0 healthy_tomato
+1 healthy_wheat
+2 unhealthy_tomato
+3 unhealthy_wheat
