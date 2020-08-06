@@ -24,7 +24,7 @@ def hello():
 @app.route('/predict')
 def prediction():
     # if there is any validation to be carried out here
-    file_ = tf.keras.utils.get_file("./images/healthytomato.JPG","./images/healthytomato.JPG")
+    file_ = tf.keras.utils.get_file('D:/images/cropImage', 'https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz')
     img = tf.keras.preprocessing.image.load_img(file_, target_size=[224, 224])
     x = tf.keras.preprocessing.image.img_to_array(img)
     x = tf.keras.applications.mobilenet.preprocess_input(
